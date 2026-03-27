@@ -27,22 +27,39 @@ The harness repo remains the main public documentation location for:
 - sandbox workflows
 - provider/model integration notes
 
-Current release:
+## Current Releases
+
+### macOS (Apple Silicon)
+
+- [`releases/v0.3.0/bobbie-v0.3.0-macos-arm64.tar.gz`](releases/v0.3.0/bobbie-v0.3.0-macos-arm64.tar.gz)
+
+Contents:
+- `bobbie` - Metal backend binary for macOS
+
+Quick install:
+```bash
+wget https://github.com/4014-Labs/bobbie-releases/releases/download/v0.3.0/bobbie-v0.3.0-macos-arm64.tar.gz
+tar xzf bobbie-v0.3.0-macos-arm64.tar.gz
+chmod +x bobbie
+./bobbie --help
+```
+
+### Linux (x86_64)
 
 - [`releases/v0.2.0/bobbie-v0.2.0-linux-x86_64.tar.gz`](releases/v0.2.0/bobbie-v0.2.0-linux-x86_64.tar.gz)
 
-Contents of the release archive:
-
+Contents:
 - `bin/bobbie`
 - `LICENSE.md`
 - `COMMERCIAL.md`
 - `README.txt`
 
-Quick download example:
-
+Quick install:
 ```bash
 wget https://github.com/4014-Labs/bobbie-releases/releases/download/v0.2.0/bobbie-v0.2.0-linux-x86_64.tar.gz
 ```
+
+## License
 
 See:
 
