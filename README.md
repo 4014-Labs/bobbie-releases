@@ -10,7 +10,17 @@ Documentation and harness/orchestration code live in the separate
 
 - `https://github.com/4014-Labs/bobbie-harness`
 
-That is the main public documentation location for:
+This repository now also includes a local copy of the current runtime contract
+docs for release consumers.
+
+See:
+
+- [`docs/README.md`](docs/README.md)
+- [`docs/shader_contract.md`](docs/shader_contract.md)
+- [`docs/uniforms.md`](docs/uniforms.md)
+- [`docs/cli_arguments.md`](docs/cli_arguments.md)
+
+The harness repo remains the main public documentation location for:
 
 - install and usage guidance
 - harness setup
