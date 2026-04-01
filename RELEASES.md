@@ -1,5 +1,19 @@
 # Release History
 
+## v0.2.1 (2026-03-26)
+
+### Linux x86_64 Build
+
+- OpenGL ES backend
+- Binary: `bobbie-v0.2.1-linux-x86_64.tar.gz`
+
+### Features
+
+- Structured render error handling
+- Improved runtime error reporting for render failures
+
+---
+
 ## v0.3.0 (2026-03-25)
 
 ### macOS ARM64 Build
