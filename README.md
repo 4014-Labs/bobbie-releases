@@ -19,6 +19,7 @@ See:
 - [`docs/shader_contract.md`](docs/shader_contract.md)
 - [`docs/uniforms.md`](docs/uniforms.md)
 - [`docs/cli_arguments.md`](docs/cli_arguments.md)
+- [`docs/experimental.md`](docs/experimental.md)
 
 The harness repo remains the main public documentation location for:
 
