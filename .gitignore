@@ -1,0 +1,5 @@
+# Local packaging scratch
+tmp/
+
+# macOS
+.DS_Store
