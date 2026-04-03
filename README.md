@@ -20,6 +20,10 @@ See:
 - [`docs/uniforms.md`](docs/uniforms.md)
 - [`docs/cli_arguments.md`](docs/cli_arguments.md)
 
+The shader contract docs include the current UV conventions. Bobbie provides a
+runtime fragment input varying at `location = 0`, and fragment shaders may name
+that input `u_uv`, `uv`, `v_uv`, `v_tex_coord`, or `tex_coord`.
+
 The harness repo remains the main public documentation location for:
 
 - install and usage guidance
@@ -46,7 +50,7 @@ chmod +x bobbie
 
 ### Linux (x86_64)
 
-- [`releases/v0.2.1/bobbie-v0.2.1-linux-x86_64.tar.gz`](releases/v0.2.1/bobbie-v0.2.1-linux-x86_64.tar.gz)
+- [`releases/v0.2.2/bobbie-v0.2.2-linux-x86_64.tar.gz`](releases/v0.2.2/bobbie-v0.2.2-linux-x86_64.tar.gz)
 
 Contents:
 - `bin/bobbie`
@@ -56,7 +60,7 @@ Contents:
 
 Quick install:
 ```bash
-wget https://github.com/4014-Labs/bobbie-releases/releases/download/v0.2.1/bobbie-v0.2.1-linux-x86_64.tar.gz
+wget https://github.com/4014-Labs/bobbie-releases/releases/download/v0.2.2/bobbie-v0.2.2-linux-x86_64.tar.gz
 ```
 
 ## License

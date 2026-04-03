@@ -1,5 +1,20 @@
 # Release History
 
+## v0.2.2 (2026-04-03)
+
+### Linux x86_64 Build
+
+- OpenGL ES backend
+- Binary: `bobbie-v0.2.2-linux-x86_64.tar.gz`
+
+### Features
+
+- release docs now describe the runtime UV fragment input correctly
+- UV is documented as a fragment varying at `location = 0`, not a bound uniform
+- release package refreshed from the current Bobbie workspace state
+
+---
+
 ## v0.2.1 (2026-03-26)
 
 ### Linux x86_64 Build
