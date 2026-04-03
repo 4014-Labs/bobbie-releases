@@ -1,4 +1,4 @@
-# Uniforms And Resources
+# Shader Resources And Interfaces
 
 This file is the quick-reference index for Bobbie shader-facing names.
 
@@ -28,7 +28,7 @@ Examples:
 - `pass_001`
 - `pass_002_prev`
 
-## Canonical globals and built-ins
+## Canonical globals
 
 - `bobbie_globals`
 - `u_time_seconds`
@@ -37,8 +37,20 @@ Examples:
 - `u_height`
 - `u_resolution`
 - `u_inv_resolution`
-- `u_uv`
-- `u_pixel_coord`
+
+These names live in the Bobbie globals contract. The current globals block does
+not include `u_uv` or `u_pixel_coord`.
+
+## Runtime stage inputs and built-ins
+
+- fragment input varying at `location = 0`:
+  - `u_uv`
+  - `uv`
+  - `v_uv`
+  - `v_tex_coord`
+  - `tex_coord`
+- compute built-in:
+  - `u_pixel_coord`
 - `gl_FragCoord`
 - `gl_GlobalInvocationID`
 
@@ -53,6 +65,8 @@ Examples:
 
 - numbered resources always use zero-padded suffixes
 - external textures are bound explicitly by name with `--ext-texture ext_tex_NNN=SOURCE`
+- fragment shaders may declare the runtime UV input at `location = 0` using `u_uv`, `uv`, `v_uv`, `v_tex_coord`, or `tex_coord`
+- the runtime UV input is not a bound uniform and is not part of the `BobbieGlobals` block
 - `pass_NNN` may only read earlier passes
 - `pass_NNN_prev` may only read the same pass or an earlier accumulation-enabled pass
 - accumulation history exists only for passes marked with `--accum`

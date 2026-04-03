@@ -136,9 +136,9 @@ Rules:
 - the referenced pass must be marked with `--accum`
 - if the referenced pass is not accumulation-enabled, validation fails
 
-## Canonical globals and built-ins
+## Canonical globals, stage inputs, and built-ins
 
-Bobbie accepts these canonical global names:
+Bobbie accepts these canonical names in this area of the shader contract:
 
 - `bobbie_globals`
 - `u_time_seconds`
@@ -152,7 +152,7 @@ Bobbie accepts these canonical global names:
 - `gl_FragCoord`
 - `gl_GlobalInvocationID`
 
-### Practical meaning of the globals
+### Practical meaning
 
 - `u_time_seconds`
   - floating-point time for the current frame
@@ -167,9 +167,11 @@ Bobbie accepts these canonical global names:
 - `u_inv_resolution`
   - `vec2(1.0 / width, 1.0 / height)`
 - `u_uv`
-  - canonical Bobbie name; accepted by validation as part of the contract
+  - fragment-stage input varying at `location = 0`
+  - the current OpenGL and Metal runtime paths generate this from the fullscreen vertex positions as normalized UV coordinates
+  - fragment shaders may also use the aliases `uv`, `v_uv`, `v_tex_coord`, or `tex_coord`
 - `u_pixel_coord`
-  - canonical Bobbie name; accepted by validation as part of the contract
+  - compute-side pixel-coordinate helper name accepted by validation as part of the contract
 - `gl_FragCoord`
   - fragment built-in for pixel-space addressing
 - `gl_GlobalInvocationID`
@@ -196,6 +198,27 @@ Notes:
 - the validator accepts the resource name `bobbie_globals`
 - the current OpenGL source-fallback path may look for block name `BobbieGlobals` in fragment shaders and `bobbie_globals` in compute shaders
 - the individual canonical names are also reserved as contract names even when authors do not declare the block explicitly
+- `u_uv` is not part of the `BobbieGlobals` block and is not a bound uniform
+
+### Fragment-stage interface rule
+
+For fragment shaders, Bobbie provides a runtime UV input at `location = 0`.
+
+This is a fragment input varying, not a uniform.
+
+Accepted fragment input names are:
+
+- `u_uv`
+- `uv`
+- `v_uv`
+- `v_tex_coord`
+- `tex_coord`
+
+Equivalent example:
+
+```glsl
+layout(location = 0) in vec2 uv;
+```
 
 ## Canonical writable outputs
 

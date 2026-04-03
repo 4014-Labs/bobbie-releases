@@ -153,5 +153,6 @@ Current render failures are normalized into structured reports containing:
 - GLSL should be compiled to SPIR-V before calling Bobbie
 - the canonical authoring target is GLSL `#version 450`
 - the current Linux OpenGL backend supports fragment and compute execution
+- fragment shaders may read a runtime UV varying at `location = 0` using `u_uv`, `uv`, `v_uv`, `v_tex_coord`, or `tex_coord`
 - the base rawvideo stream may use files or stdin/stdout
 - Bobbie does not accept compressed video containers directly for the base stream
