@@ -60,7 +60,7 @@ Contents:
 
 Quick install:
 ```bash
-wget https://github.com/4014-Labs/bobbie-releases/releases/download/v0.2.2/bobbie-v0.2.2-linux-x86_64.tar.gz
+wget https://raw.githubusercontent.com/4014-Labs/bobbie-releases/main/releases/v0.2.2/bobbie-v0.2.2-linux-x86_64.tar.gz
 ```
 
 ## License
