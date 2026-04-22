@@ -1,5 +1,22 @@
 # Release History
 
+## v0.2.3 (2026-04-22)
+
+### Linux x86_64 Build
+
+- OpenGL ES backend
+- Binary: `bobbie-v0.2.3-linux-x86_64.tar.gz`
+
+### Features
+
+- `bobbie validate` now enforces the fragment interface contract used at render time
+- runtime UV fragment inputs must be `vec2` stage inputs at `location = 0`
+- `bobbie_out_color` must be a `vec4` stage output at `location = 0`
+- Linux OpenGL rendering now keeps the GLES compatibility execution strategy as the primary supported path while still using native SPIR-V execution when the runtime advertises it
+- release package refreshed from the current Bobbie workspace state
+
+---
+
 ## v0.2.2 (2026-04-03)
 
 ### Linux x86_64 Build

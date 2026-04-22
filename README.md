@@ -50,7 +50,7 @@ chmod +x bobbie
 
 ### Linux (x86_64)
 
-- [`releases/v0.2.2/bobbie-v0.2.2-linux-x86_64.tar.gz`](releases/v0.2.2/bobbie-v0.2.2-linux-x86_64.tar.gz)
+- [`releases/v0.2.3/bobbie-v0.2.3-linux-x86_64.tar.gz`](releases/v0.2.3/bobbie-v0.2.3-linux-x86_64.tar.gz)
 
 Contents:
 - `bin/bobbie`
@@ -60,7 +60,7 @@ Contents:
 
 Quick install:
 ```bash
-wget https://raw.githubusercontent.com/4014-Labs/bobbie-releases/main/releases/v0.2.2/bobbie-v0.2.2-linux-x86_64.tar.gz
+wget https://raw.githubusercontent.com/4014-Labs/bobbie-releases/main/releases/v0.2.3/bobbie-v0.2.3-linux-x86_64.tar.gz
 ```
 
 ## License
