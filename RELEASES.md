@@ -1,5 +1,22 @@
 # Release History
 
+## v0.2.4 (2026-04-22)
+
+### Linux x86_64 Build
+
+- OpenGL ES backend
+- Binary: `bobbie-v0.2.4-linux-x86_64.tar.gz`
+
+### Features
+
+- `bobbie validate` now checks shaders against Bobbie's GLES compatibility execution path before render
+- canonical readable texture bindings are validated by resource-name order
+- binding-schema failures now report the expected binding and canonical ordering hint
+- release docs now include the binding formula used by shader generators
+- follow-up TODO added for replacing CLI-based SPIR-V reflection with a real SPIR-V API
+
+---
+
 ## v0.2.3 (2026-04-22)
 
 ### Linux x86_64 Build
